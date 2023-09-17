@@ -1,0 +1,160 @@
+@import url("./global.css");
+@import url("./fonts.css");
+
+.feed-container {
+    width: 700px;
+    border: 1px solid black;
+    margin: auto;
+    position: relative;
+}
+
+.feed-posts-container {
+    display: flex;
+    max-height: 800px;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+    border: 1px solid black;
+
+}
+
+.feed-input-container {
+}
+
+.feed-post {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.feed-post:first-child {
+    margin-bottom: 20px;
+}
+
+.feed-post:last-child {
+    margin-top: 20px;
+}
+
+.feed-post-first_line {
+    display: flex;
+    flex-direction: row;
+}
+
+.feed-post-content {
+    width: 70%;
+    padding: 10px;
+    word-wrap: break-word;
+
+}
+
+.feed-post-second_line {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.feed-post-coordinate {
+    padding-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.feed-post-date {
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.feed_post-watched-pic {
+    width: 20px;
+    height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    background-size: 20px auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../pics/viewed.png");
+}
+
+.feed-input-container {
+    width: 100%;
+    padding: 5px;
+}
+
+.feed-input {
+    width: 90%;
+    padding: 10px;
+}
+
+.geo-error-modal {
+    width: 500px;
+    background-color: white;
+    border: 3px solid black;
+    padding: 15px;
+    position: absolute;
+    top: 50px;
+    right: 110px;
+}
+
+.l1, .l2 {
+    margin-bottom: 15px;
+}
+
+.geo-error-input-wrap {
+    display: flex;
+    margin: auto;
+}
+
+.geo-error-input {
+    height: 30px;
+    padding: 3px;
+    width: 220px;
+}
+
+.geo-error-input:focus {
+    border: 3px solid black;
+}
+
+.geo-error-controls-wrapper, .geo-error-controls {
+    display: flex;
+    flex-direction: row;
+}
+
+.geo-error-ok-btn, .geo-error-cancel-btn {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.geo-error-ok-btn {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.geo-error-ok-btn, .geo-error-cancel-btn {
+    display: flex;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.geo-error-ok-btn:hover, .geo-error-cancel-btn:hover {
+    border: 3px solid black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+p {
+    margin: auto;
+    vertical-align: center;
+}
+
+.geo-error-modal.hidden {
+    display: none;
+}
+

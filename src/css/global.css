@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+
+/**Сброс стилей у кнопки.*/
+
+button {
+    padding: 0;
+    border: none;
+    outline: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -o-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+textarea {
+    overflow: hidden;
+    resize: none;
+    outline: none;
+    -moz-appearance: none;
+    border: 1px solid #999; /* указание этого свойства также удалит обводку в FireFox */
+}
+
+.widget.hidden {
+    display: none;
+}
+
+.window-login.hidden {
+    display: none;
+}
+
+.avatar-dropdown.hidden {
+    display: none;
+}
+
+.contact-status-hover.hidden {
+    display: none;
+}
+
+.window-login-alarm.hidden {
+    display: none;
+}
